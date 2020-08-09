@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Length</title>
+<script>
+	function textLength()
+	{
+		var name = document.getElementById('name').value
+		document.getElementById('result').innerHTML= name.length
+		 
+		if(name.length % 2 == 0)
+		{
+			document.getElementById('result').innerHTML='and this length is even'
+		}
+		else
+		{
+			document.getElementById('result').innerHTML='and this length is odd'
+		}
+	}
+</script>
+</head>
+<body>
+	<input type="text" placeholder="Enter any name" id="name">
+	<button onclick="textLength()">Try it</button>
+	<h2 id="result"></h2>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>&&Operator</title>
+<script>
+	function shippingCost()
+	{
+	   var price = Number(document.getElementById('price').value)
+	   
+	   if(price >=1 && price <=20)
+	   {
+		document.getElementById('result').innerHTML = 'your shipping cost is $7'
+	   }
+	   else if(price >20 && price <=30)
+	   {
+	    document.getElementById('result').innerHTML = 'your shipping cost is $5'
+	   }
+	   else if(price >30 && price <=40)
+	   {
+	    document.getElementById('result').innerHTML ='your shipping cost is $3'
+	   }
+	   else
+	   {
+		document.getElementById('result').innerHTML ='your shipping cost is <em>FREE</em>'
+	   }
+	}
+
+
+</script>
+</head>
+<body>
+<br><br>
+	<input type="text" placeholder="Enter your product price" id="price">
+	<button onclick="shippingCost()">Shipping Cost</button>
+	<h2 id="result">Your shipping cost is:</h2>
+</body>
+</html>

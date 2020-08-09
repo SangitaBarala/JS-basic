@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>calculator</title>
+
+<script>
+function calculate()
+{
+	var num1= Number(document.getElementById("num1").value)
+	var num2= Number(document.getElementById("num2").value)
+	var operation= document.getElementById("operation").value
+	
+	
+	if(operation == 'addition')
+	{
+		document.getElementById("result").innerHTML = 'Result is: '+(num1+num2)
+	}
+	else if(operation == 'subtraction')
+	{
+	document.getElementById("result").innerHTML = 'Result is: '+(num1-num2)
+	}
+	else if(operation == 'multiplication')
+	{
+	document.getElementById("result").innerHTML = 'Result is: '+(num1*num2)
+	}
+	else 
+	{
+	document.getElementById("result").innerHTML = 'Result is: '+(num1/num2)
+	}
+}
+
+</script>
+
+</head>
+<body>
+
+<input type="text" placeholder="enter first number" id="num1"><br><br>
+
+<input type="text" placeholder="enter second number" id="num2"><br><br>
+
+<button onclick="calculate()">CALCULATE</button>
+
+<select id="operation">
+<option value="addition">ADD</option>
+<option value="subtraction">SUB</option>
+<option value="multiplication">MUL</option>
+<option value="division">DIV</option>
+</select>
+
+<h2 id="result">Result is: </h2>
+</body>
+</html>

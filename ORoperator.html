@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>&&Operator</title>
+<script>
+	function welcome()
+	{
+	  var name = document.getElementById('name').value
+	  
+	  if(name.toLowerCase() =='sangita' || name=='sara')
+	  {
+		document.getElementById('result').innerHTML= 'You Are Welcome'
+	  }
+	  else 
+	  {
+		document.getElementById('result').innerHTML= 'You Are Not Welcome'
+	  }
+	}
+
+
+</script>
+</head>
+<body>
+<br>
+    <h2>Let's see if you are welcome or not...</h2>
+	<input type="text" placeholder="Enter your name" id="name">
+	<button onclick="welcome()">click Me</button>
+	<h2 id="result"</h2>
+</body>
+</html>

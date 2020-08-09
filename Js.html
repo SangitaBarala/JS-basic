@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Addition</title>
+
+<script>
+	//alert("Hii there")
+	//var name= prompt("What's your name")
+	//alert("welcome"+" "+"sara")
+	//alert("welcome "+name)
+	
+	
+	var item1= prompt("Enter the value of item1")
+	var item2= prompt("Enter the value of item2")
+	var total = parseFloat(item1)+parseFloat(item2)
+	document.write("<h2>Addition of two items' price</h2>")
+	document.write("<p>price of item1: $"+item1+"</p>")
+	document.write("<p>price of item2: $"+item2+"</p>")
+	document.write("<p>total price of item1 and item2: $"+total+"</p>")
+	
+	var tax= (10/100*total).toFixed(3)
+	var subtotal= (parseFloat(total)+parseFloat(tax)).toFixed(2)
+	document.write("<p>10% tax on items: $"+tax+"</p>")
+	document.write("<p>subtotal: $"+subtotal+"</p>")
+</script>
+</head>
+
+<body>
+
+
+</body>
+</html>
